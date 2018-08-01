@@ -1,15 +1,15 @@
-gg.toast('https://t.me/ARA_HACK')
+gg.toast("https://t.me/ARA_HACK")
 HOME=1
 function HOME()
-HM = gg.choice({'[BYPASS]','[FUNCTIONS]','[LANG]','[EXIT]'}, nil,' ▰ ▱ ARA HACK ▰ ▱ \n      PUBG: 0.7.0  ▎SCRIPT v 3.2\n            MADE BY 𒈞PLAYDF25\n                          https://t.me/ARA_HACK')
-if HM == 1 then BYPASS() end
-if HM == 2 then FUNCTIONS() end
-if HM == 3 then LANG() end
+HM = gg.choice({'[FUNCTIONS]','[LANG/ЯЗЫК]','[CHANGES]','[EXIT]'}, nil,' ▰ ▱ ARA HACK ▰ ▱ \n    PUBG: 0.7.0  ▎SCRIPT v 3.2.1\n            MADE BY 𒈞PLAYDF25\n                          https://t.me/ARA_HACK')
+if HM == 1 then FUNCTIONS() end
+if HM == 2 then LANG() end
+if HM == 3 then NEWS() end
 if HM == 4 then EXIT() end 
 HOMEDM=-1
 end
 function LANG()
-LG = gg.choice({'[1] English','[2] Русский','[EXIT]'},nil,'Select Language')
+LG = gg.choice({'[1] ENGLISH','[2] РУССКИЙ','[EXIT]'},nil,'Choose your language\nВыбери свой язык')
 if LG == 1 then HOME() end
 if LG == 2 then RUS() end
 if LG == 3 then HOME() end
@@ -424,20 +424,22 @@ end
 end
 
 function LANGRUS()
-LG = gg.choice({'[1] English','[2] Русский','[НАЗАД]'},nil,'Выберите Язык')
+LG = gg.choice({'[1] ENGLISH','[2] РУССКИЙ','[НАЗАД]'},nil,'Choose your language\nВыбери свой язык')
 if LG == 1 then HOME() end
 if LG == 2 then RUS() end
 if LG == 3 then RUS() end
 end
 function RUS()
-RU = gg.choice({'[BYPASS]','[ФУНКЦИИ]','[ЯЗЫК]','[ВЫХОД]'}, nil,' ▰ ▱ ARA HACK ▰ ▱ \n      PUBG: 0.7.0  ▎SCRIPT v 3.2 \n            MADE BY 𒈞PLAYDF25\n                          https://t.me/ARA_HACK')
-if RU == 1 then BYPASS() end
-if RU == 2 then FUNCTIONSRUS() end
-if RU == 3 then LANGRUS() end
+RU = gg.choice({'[ФУНКЦИИ]','[ЯЗЫК]','[ИЗМЕНЕНИЯ]','[ВЫХОД]'}, nil,' ▰ ▱ ARA HACK ▰ ▱ \n      PUBG: 0.7.0  ▎SCRIPT v 3.2.1 \n            MADE BY 𒈞PLAYDF25\n                          https://t.me/ARA_HACK')
+if RU == 1 then FUNCTIONSRUS() end
+if RU == 2 then LANGRUS() end
+if RU == 3 then NEWS() end
 if RU == 4 then EXIT() end
 end
 
-
+function NEWS()
+gg.alert("------------ ARA HACK 3.2\nNew: Redesigned Interface, Bypass, Magic Bullet, Colors, Antenna Always v2, Equipment Antenna, No Grass/Houses, Lift Sit Down Aim, Lift Sit, Multi Jump.")
+end
 
 function ACID()
 gg.clearResults()
@@ -631,7 +633,7 @@ end
 function Z4X()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("60;55;1.9618179e-44 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("60;55;1.9618179e-44 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(300)
 gg.editAll("20", gg.TYPE_FLOAT)
@@ -642,7 +644,7 @@ end
 function Z8X()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("60;55;1.9618179e-44 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("60;55;1.9618179e-44 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(300)
 gg.editAll("13", gg.TYPE_FLOAT)
@@ -653,7 +655,7 @@ end
 function Z15X()
 gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
-gg.searchNumber("60;55;1.9618179e-44 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber("60;55;1.9618179e-44 ", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber("55", gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(300)
 gg.editAll("5", gg.TYPE_FLOAT)
@@ -1518,7 +1520,7 @@ function MICR()
 MICR = gg.clearResults()
 gg.setRanges(gg.REGION_ANONYMOUS)
 gg.clearResults()
-gg.searchNumber('3.5;1;200;20::250 ', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
+gg.searchNumber('3.5;1;200;20::250 ', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.searchNumber('5', gg.TYPE_FLOAT, false, gg.SIGN_EQUAL, 0, -1)
 gg.getResults(100)
 gg.editAll('9999999999', gg.TYPE_FLOAT)
@@ -1653,9 +1655,3 @@ end
 
 while(true)
 do
-  if gg.isVisible(true) then
-    HOMEDM=1
-    gg.setVisible(false) 
-  end 
-  if HOMEDM==1 then HOME() end
-end                                                                                                                                                                                          
